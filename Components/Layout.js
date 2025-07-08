@@ -1,4 +1,4 @@
-'use client';
+'use client';'use client';
 
 import { useState } from 'react';
 import { User, Upload, FileText, Target, Heart, Shield, BarChart3, Settings, Users, FileCheck, Monitor, Mail, Clock, AlertTriangle, TrendingUp, Zap, LogOut, Scale } from 'lucide-react';
