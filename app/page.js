@@ -1,5 +1,11 @@
-'use client';'use client';import Layout from '../Components/Layout';
+'use client';
 
 export default function Home() {
-  return <Layout />;
+  return (
+    <div style={{ padding: '20px' }}>
+      <h1>AI750Credit Platform</h1>
+      <p>Test page working!</p>
+      <p>If you see this, Next.js is working on Vercel!</p>
+    </div>
+  );
 }
