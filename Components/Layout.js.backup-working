@@ -1,5 +1,5 @@
-'use client';
-import { useAuth } from './AuthContext';
+'use client';'use client';
+
 import { useState } from 'react';
 import { User, Upload, FileText, Target, Heart, Shield, BarChart3, Settings, Users, FileCheck, Monitor, Mail, Clock, AlertTriangle, TrendingUp, Zap, LogOut, Scale } from 'lucide-react';
 import CreditFreeze from './CreditFreeze';
@@ -19,7 +19,7 @@ import TermsConditionsComponent from './TermsConditions';
 
 const Layout = () => {
   const [activeTab, setActiveTab] = useState('dashboard');
-  const { user, signOut, isAuthenticated } = useAuth();
+  // Dashboard Component
   const DashboardComponent = () => (
     <div className="space-y-6">
       <div className="mb-6">
@@ -208,7 +208,7 @@ const Layout = () => {
             <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-sm font-semibold">
               S
             </div>
-            <button onClick={() => signOut()} className="flex items-center space-x-2 px-4 py-2 text-sm text-white bg-red-600 hover:bg-red-700 rounded-lg transition-colors">
+            <button className="flex items-center space-x-2 px-4 py-2 text-sm text-white bg-red-600 hover:bg-red-700 rounded-lg transition-colors">
               <LogOut className="w-4 h-4" />
               <span>Sign Out</span>
             </button>
